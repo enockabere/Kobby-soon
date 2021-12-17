@@ -405,3 +405,19 @@ a:hover {
 .c-cards {
     padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .counts {
+        display: none;
+    }
+
+    .inner-card {
+        margin-top: -8rem;
+    }
+
+    .hero2 h4 {
+        font-size: 2rem;
+        line-height: 65px;
+        margin-top: 11rem
+    }
+}
