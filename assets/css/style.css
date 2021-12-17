@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Libre+Baskerville:wght@700&family=Noto+Serif:wght@700&family=Titillium+Web:wght@300&display=swap');
+
+:root {
+    --dark: #000;
+    --blue1: #3c37f1;
+    --blue2: #1998ff;
+    --whitesmoke: whitesmoke;
+    --white: #ffff;
+    --white2: #dadcd7;
+    --green: #16A085;
+    --green2: #00d663;
+    --red: #ff3333;
+    --pink: #fa65b1;
+    --main: #e47b18;
+    --main2: #f58f5b;
+    --purple: #302cc1;
+    --purple2: #726ae3;
+    --light-dark: #49494A;
+    --font1: 'Noto Serif', serif;
+    --font2: 'Libre Baskerville', serif;
+    --font3: 'Baloo Bhaijaan 2', cursive;
+    --normal-font-size: 1rem;
+    --header-font-size: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--whitesmoke)
+}
+
+/* navbar */
+.navbar {
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: var(--white);
+}
+
+.navbar .nav-item .nav-link.active {
+    color: var(--red);
+
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: var(--red);
+}
+
+
+/* hero section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/bg/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero2 h4 {
+    font-size: 3rem;
+    font-family: var(--font2);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 65px;
+    margin-top: 11rem
+}
+
+.br {
+    color: var(--red);
+    font-family: var(--font1);
+}
+
+.counts {
+    margin-top: 11rem
+}
+
+.count {
+    background: var(--red);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+    border: 20px solid var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font3)
+}
+
+.count h5 {
+    color: white;
+    font-weight: 600;
+}
+
+.count small {
+    color: #E5E7E9;
+}
+
+.hero2 p {
+
+    color: #E5E7E9;
+    font-size: 19px
+}
+
+.inner-card {
+    background: white;
+    padding: 2rem;
+    padding-top: 6rem;
+    margin-top: -12rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 8px;
+}
+
+#h-card {
+    border: none;
+    padding: 1rem
+}
+
+#h-card h3 {
+    font-family: var(--font2);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+#h-card h4 {
+    font-family: var(--font1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+#h-card p {
+    font-family: var(--font3);
+    margin-top: 1rem;
+    color: #525353
+}
+
+.h-btn a {
+    background: var(--red);
+    border-color: var(--red);
+    opacity: 0.7;
+    border-radius: 30px;
+    font-family: var(--font3);
+    padding: .6rem;
+    width: 9rem;
+    color: white;
+}
+
+.h-btn a:hover {
+    opacity: 1;
+    color: white;
+}
+
+.image img {
+    width: 160px;
+    height: auto;
+}
+
+.nav-colored {
+    background-color: red;
+}
+
+.nav-transparent {
+    background-color: var(--white);
+}
+
+/* services */
+.services {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-header small {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: var(--font2);
+    color: var(--red);
+}
+
+.section-header p {
+    color: #525353;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: var(--font1);
+    font-size: 1.2rem;
+}
+
+.s-card {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.s-icon i {
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+.s-text h3 {
+    color: #525353;
+    font-family: var(--font2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.s-text p {
+    color: var(--light-dark);
+    font-family: var(--font3);
+}
+
+.s-pic img {
+    width: 130px;
+    height: 130px;
+}
+
+/* footer */
+.footer {
+    background-color: #e3d6ce;
+    z-index: 900;
+}
+
+.f-logo {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.f-logo h6 {
+    color: var(--light-dark);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.f-logo p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.f-logo ul {
+    list-style: none;
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
+.f-logo ul,
+li,
+a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+.f-logo ul,
+li,
+a:hover {
+    color: var(--red);
+}
+
+.f-logo button {
+    background-color: #ffffff;
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.f-logo button:hover {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: white;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: var(--dark);
+}
+
+/* career page */
+.hero-c {
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/bg/21.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.jumbotron p {
+    font-family: var(--font3)
+}
+
+.c-icon i {
+    font-size: 3rem;
+    color: var(--red);
+}
+
+.c-text h3 {
+    color: #525353;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.apply {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.des-head h3 {
+    color: #525353;
+    font-family: var(--font2);
+}
+
+.des h4 {
+    margin-top: 2rem;
+    font-family: var(--font1);
+    font-size: 1.3rem;
+}
+
+.des ul li {
+    color: var(--light-dark);
+    line-height: 3;
+    font-family: var(--font3);
+}
+
+.g-card {
+    padding: 1rem;
+}
+
+.g-card .card-title {
+    color: #525353;
+    font-family: var(--font2);
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid red;
+}
+
+.g-card .card-body p {
+    font-family: var(--font3);
+}
+
+.g-card .card-body p span {
+    font-weight: bold;
+}
+
+.des p {
+    font-family: var(--font3)
+}
+
+.des-head p {
+    font-family: var(--font3)
+}
+
+#change2,
+#change3,
+#change4 {
+    display: none;
+}
+
+.actives {
+    background: var(--blue2);
+    color: white;
+}
+
+.actives .c-icon i {
+    color: white;
+}
+
+.actives .c-text h3 {
+    color: white;
+}
+
+.c-cards {
+    padding-bottom: 2rem;
+}
