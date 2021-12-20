@@ -413,6 +413,7 @@ a:hover {
 
     .inner-card {
         margin-top: -12rem;
+        background: red;
     }
 
     .hero2 h4 {
