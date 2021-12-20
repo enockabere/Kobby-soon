@@ -411,10 +411,10 @@ a:hover {
         display: none;
     }
 
-    .inner-card {
+    /* .inner-card {
         margin-top: -20rem;
         background: rgb(40, 172, 13);
-    }
+    } */
 
     .hero2 h4 {
         font-size: 2rem;
