@@ -420,4 +420,13 @@ a:hover {
         line-height: 65px;
         margin-top: 11rem
     }
+
+    .navbar {
+        padding-bottom: 3rem;
+    }
+
+    .navbar-nav {
+        background: whitesmoke;
+        padding: 1rem;
+    }
 }
